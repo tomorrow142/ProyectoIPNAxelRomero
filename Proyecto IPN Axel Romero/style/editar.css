@@ -1,0 +1,57 @@
+html {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex; 
+    flex-direction: column;
+    background-color: #dbcbb5;
+}
+
+header {
+    margin-top: 1vh;
+    background-color: #faebd7;
+    margin-left: 25%;
+    margin-right: 25%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 10px;
+}
+.productoImg {
+    max-width: 40vh;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.Product {
+    max-width: 490px;
+    text-align: center;
+    justify-content: center;
+
+}
+.edit {
+    margin-left: 15%;
+    margin-right: 15%;
+    width: 70%;
+}
+.save {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 3px;
+    padding: 5px;
+    width: fit-content;
+    border-style: solid;
+    border-color: #807668;
+    border-width: 5px;
+    border-radius: 5px;
+}
+input[type="button"] {
+    margin: 5px;
+}

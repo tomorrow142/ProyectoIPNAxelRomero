@@ -1,17 +1,6 @@
 body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
     background-color: #dbcbb5;
-}
-header {
-    margin-top: 1vh;
-    background-color: #faebd7;
-    margin-left: 25%;
-    margin-right: 25%;
-    width: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    border-radius: 10px;
-}
-header img, h2{
-    margin: 10px;
-}
+}  
