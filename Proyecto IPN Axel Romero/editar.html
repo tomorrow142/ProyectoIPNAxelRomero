@@ -9,7 +9,7 @@
     <title>Editar Producto</title>
 </head>
 <body>
-  <div class="container-lg navbar bg-body-tertiary align-items-center d-flex align-content-center mb-3">
+  <div class="container-lg navbar bg-body-tertiary align-items-center d-flex align-content-center mb-3 mt-1 ">
     <a href="https://ipn.com.ar/sistema-de-gestion-empresarial" class="me-auto p-2 ps-3">
       <img src="./recursos/logo_iPN.svg" alt="Logo IPN">
     </a>
@@ -19,16 +19,16 @@
     </button>
     <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
       <div class="offcanvas-header">
-        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
+        <img src="/recursos/logo_iPN.svg">
         <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
       </div>
       <div class="offcanvas-body">
         <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">pagina 1</a>
+            <a class="nav-link active" aria-current="page" href="/index.html">Filtros y lista</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">pagina 2</a>
+            <a class="nav-link" href="/editar.html">ver producto</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">pagina 3</a>
@@ -38,71 +38,53 @@
     </div>
   </div>
 <!--end of header-->
-    <h1 class="justify-content-center d-flex"><a href="/index.html">Producto</a></h1>
-    <div class="Product container">
-        <img class="productoImg" src="/recursos/remera.jpg">
-        <h5>Descripción</h5>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, voluptates corporis veniam eligendi facere repellendus consectetur perferendis, esse amet deserunt ad nesciunt. Reiciendis sit nam vitae ex incidunt itaque ullam!</p>
-        <table class="table">
-            <thead>
-              <tr>
-                <th scope="col">#</th>
-                <th scope="col">First</th>
-                <th scope="col">Last</th>
-                <th scope="col">Handle</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <th scope="row">1</th>
-                <td>Mark</td>
-                <td>Otto</td>
-                <td>@mdo</td>
-              </tr>
-            </tbody>
-          </table>
-          <div>
-          </div>
-        </div>
-          <div class="edit">
-            <h2 class="justify-content-center d-flex">Descripción y edición</h2>
-            <table class="table">
-                <thead class="thead-dark">
-                  <tr>
-                    <th scope="col">IPN</th>
-                    <th scope="col">Tipo de Prenda</th>
-                    <th scope="col">Color de prenda</th>
-                    <th scope="col">Tamaño</th>
-                    <th scope="col">Marca</th>
-                    <th scope="col">Rango de Precio</th>
-                    <th scope="col">Material</th>
-                    <th scope="col">Estilo</th>
-                    <th scope="col">Temporada</th>
-                    <th scope="col">Descuento</th> 
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <th scope="row">1</th>
-                    <td>Camisa</td>
-                     <td>Azul</td>
-                    <td>M</td>
-                    <td>Nike</td>
-                    <td>$20-$30</td>
-                    <td>Algodón</td>
-                    <td>Casual</td>
-                    <td>Verano</td>
-                    <td>10%</td>
-                  </tr>
-                </tbody>
-              </table>
-              <div class="save"> 
-                <h5>Guardar cambios</h5>
-                <input type="button" value="Guardar">
-              </div>
-          </div>
-          <footer>
-          </footer>
+    <section class="container w-50 d-grid bg-light-subtle pb-2 rounded">
+      <h1 class="d-flex justify-content-center">REMERA</h1>
+      <div class="container-md d-flex justify-content-center">
+         <img class="pricipal_image" src="/recursos/remera blanca.png">
+         <div class="d-flex flex-column">
+       <img src="/recursos/remera gris.png" class="secundary_image">
+        <img src="/recursos/remera verde.png" class="secundary_image">
+         </div>
+         
+      </div>
+    </section>
+
+    <section class="container-fluid w-75 bg-light-subtle mt-3">
+      <section id="Name" class="d-flex align-content-center align-items-center">
+        <h3 class="p-2">Nombre: </h3>
+        <p class="d-flex mt-3 ms-3">Remera</p>
+      </section>
+      <section id="descripcion" class="d-flex align-content-center align-items-center">
+        <h3 class="p-2">Despcripción: </h3>
+        <p class="d-flex mt-3 ms-3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet placeat dolores, quam sequi laudantium doloribus ab reiciendis, voluptates, quae fuga cumque aliquam obcaecati autem blanditiis deleniti labore error unde enim.</p>
+      </section>
+      <section id="code" class="d-flex align-content-center align-items-center">
+          <h3 class="d-flex align-content-center ">ID: </h1>
+          <p class="d-flex mt-3 ms-3">id del producto</p>
+      </section>
+      <section id="sku" class="d-flex align-content-center align-items-center">
+        <h3 class="d-flex align-content-center ">SKU: </h1>
+        <p class="d-flex mt-3 ms-3">SKU del producto</p>
+    </section>
+    <section id="precio" class="d-flex align-content-center align-items-center">
+      <h3 class="d-flex align-content-center ">Precio: </h1>
+      <p class="d-flex mt-3 ms-3">Precio del producto</p>
+  </section>
+  <section id="tipo_product" class="d-flex align-content-center align-items-center">
+    <h3 class="d-flex align-content-center ">Tipo: </h1>
+    <p class="d-flex mt-3 ms-3">tipo de producto</p>
+</section>
+    </section>
+    <section class="container-md d-flex justify-content-center pt-2">
+    <button>Editar Producto</button>
+  </section>
+  <footer class="d-flex align-content-center align-items-center img-fluid">
+    <section class="container-lg d-flex align-items-center img-fluid justify-content-center">
+      <img src="/recursos/logo_iPN.svg" class="m-2">
+    <h3 class="align-items-center p-2">Todos los derechos reservados</h3>
+    </section>
+  </footer>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
