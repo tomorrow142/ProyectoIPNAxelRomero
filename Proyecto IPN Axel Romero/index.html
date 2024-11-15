@@ -20,16 +20,16 @@
           </button>
           <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
             <div class="offcanvas-header">
-              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">IPN</h5>
               <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
             </div>
             <div class="offcanvas-body">
               <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                 <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#">pagina 1</a>
+                  <a class="nav-link active" aria-current="page" href="/index.html">Filtros y lista</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">pagina 2</a>
+                  <a class="nav-link" href="/editar.html">ver producto</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="#">pagina 3</a>
@@ -40,9 +40,78 @@
         </div>
     <!--end of header-->
             <!--filter-->
+              <section class="container d-flex flex-wrap justify-content-between align-items-center border border-primary p-2 b border-3">
+                <div class="d-flex flex-column align-items-center w-25">
+                <label for="category">Categoría</label>
+                <select id="category" class="w-50">
+                  <option selected>Ninguna</option>
+                  <option>categoría 1</option>
+                  <option>categoría 2</option>
+                  <option>categoría 3</option>
+                  </select>
+                </div>
+                <div class="d-flex flex-column align-items-center w-25">
+                  <label for="Talle">Talle</label>
+                  <select id="Talle" class="w-50">
+                    <option selected>Ninguna</option>
+                    <option>Talle 1</option>
+                    <option>Talle 2</option>
+                    <option>Talle 3</option>
+                    </select>
+                  </div>
+                            <div class="d-flex flex-column align-items-center w-25">
+                              <label for="Marca">Marca</label>
+                              <select id="Marca" class="w-50">
+                                <option selected>Ninguna</option>
+                                <option>Marca 1</option>
+                                <option>Marca 2</option>
+                                <option>Marca 3</option>
+                                </select>
+                              </div>
+                              <div class="d-flex flex-column align-items-center w-25">
+                                <label for="Precio">Precio</label>
+                                <select id="Precio" class="w-50">
+                                  <option selected>Ninguna</option>
+                                  <option>Precio 1</option>
+                                  <option>Precio 2</option>
+                                  <option>Precio 3</option>
+                                  </select>
+                                </div>
+                                <div class="d-flex flex-column align-items-center w-25">
+                                  <label for="sku">ingrese el SKU</label>
+                                  <input type="text" class="w-50" id="sku">
+                              </div>
+                                <!--<div class="d-flex flex-column align-items-center w-25">
+                                  <label for="SKU">SKU</label>
+                                  <select id="SKU" class="c">
+                                    <option selected>Ninguna</option>
+                                    <option>categoría 1</option>
+                                    <option>categoría 2</option>
+                                    <option>categoría 3</option>
+                                    </select>
+                                  </div>-->
+                                  <div class="d-flex flex-column align-items-center w-25">
+                                    <label for="id">ingrese el ID</label>
+                                    <input type="text" class="w-50" id="id">
+                                </div>
+                                  <div class="d-flex flex-column align-items-center w-25">
+                                    <label for="Temporada">Temporada</label>
+                                    <select id="Temporada" class="w-50">
+                                      <option selected>Ninguna</option>
+                                      <option>Verano</option>
+                                      <option>Invierno</option>
+                                      <option>Primavera</option>
+                                      <option>Otoño</option>
+                                      </select>
+                                    </div>
+                                        <div class="d-flex flex-column align-items-center w-25">
+                                          <label for="Publicado">Está publicado?</label>
+                                          <input type="checkbox" class="w-50" id="publicado">
+                                        </div>
+              </section>
             <!--filter-->             
                 <!--Table-->
-                <h2 class="justify-content-center" id="h2_coincidencias">Coincidencias</h2>
+                <h2 class="d-flex pt-3 justify-content-center" id="h2_coincidencias">Coincidencias</h2>
             <table class="table">
                 <thead class="thead-dark">
                   <tr>
