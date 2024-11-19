@@ -1,13 +1,56 @@
-body {
-    margin-bottom: 2vh;
-    height: 100%;
-    background-color: #dbcbb5;
+html body {
+    height: 100vh; 
+    margin: 0;
+    background-color: #dfddda;
+}   
+footer {
+    height: 16vh;
+    margin-top: auto;   
+    background-color: black;
+    display: flex;
+    justify-content: center;
 }
+#section_footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#logo_ipn_footer {
+    max-height: 20%;
+}
+
 .secundary_image {
     height: 20vh;
     width: 23vh;
-    border: solid lightblue;
+    border: solid #8a8a8a;
+    margin: 1%;
 }
 .pricipal_image {
-    border: solid lightblue;
+    border: solid #8a8a8a;
+}
+.colors { 
+    display: flex;
+    flex-direction: column;
+    margin-right: 6%;
+}
+.color {
+    border: solid black;
+    width: 80px;
+    height: 20px;
+    margin-bottom: 5px;
+    border-radius: 4px;
+}
+.colors_container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.white {
+    background-color: #dfddda;
+}
+.gray {
+    background-color: #888686;
+}
+.green {
+    background-color: #0a3b10;
 }

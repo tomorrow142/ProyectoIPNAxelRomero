@@ -1,5 +1,30 @@
-body {
-    margin-bottom: 2vh;
-    height: 100%;
-    background-color: #dbcbb5;
+html body {
+    height: 100vh; 
+    margin: 0;
+    background-color: #dfddda;
 }  
+footer {
+    height: 100vh;
+    margin-top: auto;   
+    background-color: black;
+    display: flex;
+    justify-content: center;
+}
+.filter {
+    text-align: center;
+}
+
+#filters {
+    border: 4px solid;
+    border-radius: 10px;
+    border-color: #8a8a8a;
+}
+
+#section_footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#logo_ipn_footer {
+    max-height: 20%;
+}

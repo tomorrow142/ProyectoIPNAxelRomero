@@ -9,7 +9,7 @@
     <title>Editar Producto</title>
 </head>
 <body>
-  <div class="container-lg navbar bg-body-tertiary align-items-center d-flex align-content-center mb-3 mt-1 ">
+  <header class="container-lg navbar bg-body-tertiary align-items-center d-flex align-content-center mb-3 mt-1 ">
     <a href="https://ipn.com.ar/sistema-de-gestion-empresarial" class="me-auto p-2 ps-3">
       <img src="./recursos/logo_iPN.svg" alt="Logo IPN">
     </a>
@@ -36,55 +36,67 @@
         </ul>
       </div>
     </div>
-  </div>
-<!--end of header-->
-    <section class="container w-50 d-grid bg-light-subtle pb-2 rounded">
+  </header>
+
+    <section class="container w-50 d-grid bg-light-subtle pb-2 rounded flex-wrap">
       <h1 class="d-flex justify-content-center">REMERA</h1>
-      <div class="container-md d-flex justify-content-center">
-         <img class="pricipal_image" src="/recursos/remera blanca.png">
-         <div class="d-flex flex-column">
-       <img src="/recursos/remera gris.png" class="secundary_image">
-        <img src="/recursos/remera verde.png" class="secundary_image">
-         </div>
-         
-      </div>
+        <div class="container-md d-flex justify-content-center" id="colors_container">
+          <div class="colors d-flex align-items-center"> 
+              <h4>Colores: </h4>
+              <h5>Blanco</h5>
+              <div class="color white"></div> 
+              <h5>gris</h5>
+              <div class="color gray"></div> 
+              <h5>verde</h5>
+              <div class="color green"></div> 
+          </div>
+              <img class="pricipal_image img-responsive" src="/recursos/remera blanca.png">
+                  <div class="d-flex flex-column">
+                      <img src="/recursos/remera gris.png" class="secundary_image">
+                      <img src="/recursos/remera verde.png" class="secundary_image">
+                  </div>      
+        </div>
     </section>
 
     <section class="container-fluid w-75 bg-light-subtle mt-3">
-      <section id="Name" class="d-flex align-content-center align-items-center">
-        <h3 class="p-2">Nombre: </h3>
-        <p class="d-flex mt-3 ms-3">Remera</p>
-      </section>
-      <section id="descripcion" class="d-flex align-content-center align-items-center">
-        <h3 class="p-2">Despcripción: </h3>
-        <p class="d-flex mt-3 ms-3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet placeat dolores, quam sequi laudantium doloribus ab reiciendis, voluptates, quae fuga cumque aliquam obcaecati autem blanditiis deleniti labore error unde enim.</p>
-      </section>
-      <section id="code" class="d-flex align-content-center align-items-center">
-          <h3 class="d-flex align-content-center ">ID: </h1>
-          <p class="d-flex mt-3 ms-3">id del producto</p>
-      </section>
-      <section id="sku" class="d-flex align-content-center align-items-center">
-        <h3 class="d-flex align-content-center ">SKU: </h1>
-        <p class="d-flex mt-3 ms-3">SKU del producto</p>
-    </section>
-    <section id="precio" class="d-flex align-content-center align-items-center">
-      <h3 class="d-flex align-content-center ">Precio: </h1>
-      <p class="d-flex mt-3 ms-3">Precio del producto</p>
-  </section>
-  <section id="tipo_product" class="d-flex align-content-center align-items-center">
-    <h3 class="d-flex align-content-center ">Tipo: </h1>
-    <p class="d-flex mt-3 ms-3">tipo de producto</p>
-</section>
+          <section id="Name" class="d-flex align-content-center align-items-center">
+                <h3 class="p-2">Nombre: </h3>
+                <p class="d-flex mt-3 ms-3">Remera</p>
+            </section>
+                  <section id="descripcion" class="d-flex align-content-center align-items-center">
+                      <h3 class="p-2">Despcripción: </h3>
+                      <p class="d-flex mt-3 ms-3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet placeat dolores, quam sequi laudantium doloribus ab reiciendis, voluptates, quae fuga cumque aliquam obcaecati autem blanditiis deleniti labore error unde enim.</p>
+                  </section>
+                      <section id="code" class="d-flex align-content-center align-items-center">
+                          <h3 class="d-flex align-content-center ">ID: </h1>
+                          <p class="d-flex mt-3 ms-3">id del producto</p>
+                      </section>
+                          <section id="sku" class="d-flex align-content-center align-items-center">
+                              <h3 class="d-flex align-content-center ">SKU: </h1>
+                              <p class="d-flex mt-3 ms-3">SKU del producto</p>
+                          </section>
+                              <section id="precio" class="d-flex align-content-center align-items-center">
+                                  <h3 class="d-flex align-content-center ">Precio: </h1>
+                                  <p class="d-flex mt-3 ms-3">Precio del producto</p>
+                              </section>
+                                  <section id="tipo_product" class="d-flex align-content-center align-items-center">
+                                      <h3 class="d-flex align-content-center ">Tipo: </h1>
+                                      <p class="d-flex mt-3 ms-3">tipo de producto</p>
+                                  </section>
+                                      <section id="tipo_product" class="d-flex align-content-center align-items-center">
+                                          <h3 class="d-flex align-content-center ">Tipo: </h1>
+                                          <p class="d-flex mt-3 ms-3">tipo de producto</p>
+                                      </section>
     </section>
     <section class="container-md d-flex justify-content-center pt-2">
     <button>Editar Producto</button>
   </section>
-  <footer class="d-flex align-content-center align-items-center img-fluid">
-    <section class="container-lg d-flex align-items-center img-fluid justify-content-center">
-      <img src="/recursos/logo_iPN.svg" class="m-2">
-    <h3 class="align-items-center p-2">Todos los derechos reservados</h3>
-    </section>
-  </footer>
+      <footer id="footer">
+        <section id="section_footer">
+            <img src="/recursos/logo_iPN.svg" class="m-2" id="logo_ipn_footer">
+            <h3 class="p-2 text-white">Todos los derechos reservados</h3>
+        </section>
+      </footer>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
