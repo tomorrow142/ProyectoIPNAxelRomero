@@ -13,7 +13,7 @@
     <a href="https://ipn.com.ar/sistema-de-gestion-empresarial" class="me-auto p-2 ps-3">
       <img src="./recursos/logo_iPN.svg" alt="Logo IPN">
     </a>
-    <h3 class="pe-3">Cliente</h3>
+    <h3 class="pe-3">Nombre Cliente</h3>
     <button class="navbar-toggler me-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -44,12 +44,15 @@
           <div class="colors d-flex align-items-center"> 
               <h4>Colores: </h4>
               <h5>Blanco</h5>
-              <div class="color white"></div> 
+              <button class="color white"></button> 
               <h5>gris</h5>
-              <div class="color gray"></div> 
+              <button class="color gray"></button> 
               <h5>verde</h5>
-              <div class="color green"></div> 
-          </div>
+              <button class="color green"></button> 
+              <br>
+              <h6>Editar productos</h6>
+              <button class="w-100">Editar</button>
+            </div>
               <img class="pricipal_image img-responsive" src="/recursos/remera blanca.png">
                   <div class="d-flex flex-column">
                       <img src="/recursos/remera gris.png" class="secundary_image">
@@ -58,39 +61,66 @@
         </div>
     </section>
 
-    <section class="container-fluid w-75 bg-light-subtle mt-3">
-          <section id="Name" class="d-flex align-content-center align-items-center">
-                <h3 class="p-2">Nombre: </h3>
-                <p class="d-flex mt-3 ms-3">Remera</p>
-            </section>
-                  <section id="descripcion" class="d-flex align-content-center align-items-center">
-                      <h3 class="p-2">Despcripción: </h3>
-                      <p class="d-flex mt-3 ms-3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet placeat dolores, quam sequi laudantium doloribus ab reiciendis, voluptates, quae fuga cumque aliquam obcaecati autem blanditiis deleniti labore error unde enim.</p>
-                  </section>
-                      <section id="code" class="d-flex align-content-center align-items-center">
-                          <h3 class="d-flex align-content-center ">ID: </h1>
-                          <p class="d-flex mt-3 ms-3">id del producto</p>
-                      </section>
-                          <section id="sku" class="d-flex align-content-center align-items-center">
-                              <h3 class="d-flex align-content-center ">SKU: </h1>
-                              <p class="d-flex mt-3 ms-3">SKU del producto</p>
+    <section class="container-fluid w-50 bg-light-subtle mt-3 mb-3 ps-3 pe-3 pb-3" id="container_details">
+                    <div class="d-flex justify-content-center">
+                        <section id="descripcion" class="d-flex flex-column w-50 align-content-center align-items-center">
+                            <h3 class="p-2 d-flex justify-content-center align-items-center align-content-center">Despcripción: </h3>
+                            <p class="d-flex mt-3 ms-3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet placeat dolores, quam sequi laudantium doloribus ab reiciendis, voluptates, quae fuga cumque aliquam obcaecati autem blanditiis deleniti labore error unde enim.</p>
+                        </section>
+                    </div>
+                    <div class="details">
+                          <section id="Name" class="d-flex align-content-center align-items-center">
+                              <h3>Nombre: </h3>
+                              <p class="d-flex mt-3 ms-3">Remera</p>
                           </section>
-                              <section id="precio" class="d-flex align-content-center align-items-center">
-                                  <h3 class="d-flex align-content-center ">Precio: </h1>
-                                  <p class="d-flex mt-3 ms-3">Precio del producto</p>
+                              <section id="code" class="d-flex align-content-center align-items-center">
+                                  <h3 class="d-flex align-content-center ">ID: </h1>
+                                  <p class="d-flex mt-3 ms-3">id del producto</p>
                               </section>
-                                  <section id="tipo_product" class="d-flex align-content-center align-items-center">
-                                      <h3 class="d-flex align-content-center ">Tipo: </h1>
-                                      <p class="d-flex mt-3 ms-3">tipo de producto</p>
+                                  <section id="sku" class="d-flex align-content-center align-items-center">
+                                      <h3 class="d-flex align-content-center ">SKU: </h1>
+                                      <p class="d-flex mt-3 ms-3">SKU del producto</p>
                                   </section>
-                                      <section id="tipo_product" class="d-flex align-content-center align-items-center">
-                                          <h3 class="d-flex align-content-center ">Tipo: </h1>
-                                          <p class="d-flex mt-3 ms-3">tipo de producto</p>
+                                      <section id="precio" class="d-flex align-content-center align-items-center">
+                                          <h3 class="d-flex align-content-center ">Precio: </h1>
+                                          <p class="d-flex mt-3 ms-3">Precio del producto</p>
                                       </section>
+                                          <section id="tipo_product" class="d-flex align-content-center align-items-center">
+                                              <h3 class="d-flex align-content-center ">Tipo: </h1>
+                                              <p class="d-flex mt-3 ms-3">tipo de producto</p>
+                                          </section>
+                                              <section id="talle" class="d-flex align-content-center align-items-center">
+                                                  <h3 class="d-flex align-content-center ">Talle: </h1>
+                                                  <p class="d-flex mt-3 ms-3">S</p>
+                                              </section>
+                    </div>
+
+                                        <h1 class="d-flex justify-content-center pb-2">Tamaño</h1>
+                                            <div class="d-flex justify-content-center">
+                                              <table class="table w-75">
+                                                  <thead>
+                                                    <tr>
+                                                      <th scope="col" class="bg-secondary text-white">Dimensiones</th>
+                                                      <th scope="col" class="bg-secondary text-white">Medida</th>
+                                                    </tr>
+                                                  </thead>
+                                                  <tbody>
+                                                    <tr>
+                                                      <th scope="row" class="bg-info-subtle">Largo</th>
+                                                      <td class="bg-info-subtle">53 cm</td>
+                                                    </tr>
+                                                    <tr>
+                                                      <th scope="row">Ancho</th>
+                                                      <td>37 cm</td>
+                                                    </tr>
+                                                    <tr>
+                                                      <th scope="row" class="bg-info-subtle">Profundidad</th>
+                                                      <td colspan="2" class="bg-info-subtle">50cm</td>
+                                                    </tr>
+                                                  </tbody>
+                                              </table>
+                                            </div>
     </section>
-    <section class="container-md d-flex justify-content-center pt-2">
-    <button>Editar Producto</button>
-  </section>
       <footer id="footer">
         <section id="section_footer">
             <img src="/recursos/logo_iPN.svg" class="m-2" id="logo_ipn_footer">

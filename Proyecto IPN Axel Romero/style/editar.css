@@ -54,3 +54,6 @@ footer {
 .green {
     background-color: #0a3b10;
 }
+#container_details {
+    border-radius: 4px;
+}
